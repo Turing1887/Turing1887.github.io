@@ -1,5 +1,4 @@
-var fs = require('fs');
-const util = require('util');
+
 
 $(document).ready(function(){
     $("#gsetup-btn").click(function(){
@@ -10,4 +9,9 @@ $(document).ready(function(){
         $(".content").addClass("hidden");
         $(".websites-table").removeClass("hidden");
     });
+    $("#misc-btn").on("click",function(){
+        $(".content").addClass("hidden");
+        $(".misc").removeClass("hidden");
+    });
+
 });

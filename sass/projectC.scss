@@ -1,0 +1,31 @@
+.headline h3{
+    color: #574B90;
+}
+.vote-content{
+    border: 1px solid gray;
+}
+.back-btn{
+    padding: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #574B90;
+    
+    &:hover{
+        color: white;
+        background-color: #574B90;
+        transition: color 0.3s;
+        transition: background-color 0.3s;
+    }
+    &:focus{
+        outline: none;
+    }
+    a{
+        text-decoration: none;
+        color: #574B90;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
+margin: 20px 20px;
+}
