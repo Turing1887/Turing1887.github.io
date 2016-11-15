@@ -15,3 +15,13 @@ $(document).ready(function(){
     });
 
 });
+
+function sendMail() {
+    var link = "mailto:timzschage@gmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape(document.getElementById('topics').value)
+    ;
+
+    window.location.href = link;
+}

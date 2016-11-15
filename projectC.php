@@ -1,3 +1,17 @@
+<?php 
+$email = "timzschage@gmail.com";
+$subject = "Test";
+$message = $_POST['text-input'];
+
+$headers = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+if(isset($_POST['submit-btn'])){
+ mail($email,$subject,$message,$headers);   
+}
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -34,16 +48,15 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="maintable container-fluid">
-        <nav class="row">
-            <!--<div class="row menu">
-                <ul class="col-lg-12">
-                    <li class="col-lg-3 text-center ripple" id="gsetup-btn">About me</li>
-                    <li class="col-lg-3 text-center ripple" id="websites-btn">Websites</li>
-                    <li class="col-lg-3 text-center ripple" id="app-btn">Applications</li>
-                    <li class="col-lg-3 text-center ripple" id="misc-btn">Misc</li>
-                </ul>
-            </div>-->
-            <button class="back-btn"><a href="index.html">Back to main page</a></button>
+        <nav class="row center-block">
+           
+            <button class="back-btn col-lg-4"><a href="index.html">&laquo; Back to main page</a></button>
+            <form class="" action="<?php echo $_SERVER['PHP_SELF'];  ?>" method="post">
+                <h4 class="col-lg-4">Contribute to the topic!</h4>
+                <label for="text-input">What what?</label>
+                <input type="text" class="col-lg-4 text-input" name="text-input" id="topics" placeholder="contribute">
+                <button type="submit" class="submit-btn" >Submit</button>
+            </form>
         </nav>
         <section class="container">
             <div class="row headline">

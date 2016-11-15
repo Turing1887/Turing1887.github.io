@@ -9,6 +9,7 @@
   font-size: 15px;
   background-color: transparent;
   border: 1px solid #574B90;
+  border-radius: 10px;
   margin: 20px 20px; }
   .back-btn:hover {
     color: white;
@@ -23,3 +24,11 @@
     .back-btn a:hover {
       color: white;
       text-decoration: none; }
+
+.text-input {
+  padding: 10px; }
+
+.submit-btn {
+  border: 2px solid #574B90;
+  color: white;
+  border-radius: 10px; }
