@@ -1,6 +1,6 @@
 body {
   background-color: whitesmoke !important;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
 /*.form-group {
@@ -49,14 +49,15 @@ nav {
   margin: auto;
   margin-top: 20px; }
 
-dl dd {
-  font-size: 16px; }
-
-dl dt {
-  font-size: 16px; }
-
 .content {
-  float: left; }
+  margin: auto;
+  text-align: center; }
+  .content p {
+    text-align: center;
+    font-size: 16px; }
+  .content .bio {
+    margin: auto;
+    width: 500px; }
 
 .ripple {
   overflow: hidden; }
@@ -90,38 +91,3 @@ dl dt {
       transition: box-shadow 0.3s; }
     .misc ul li a {
       font-size: 20px; }
-
-.headline h3 {
-  color: #574B90; }
-
-.vote-content {
-  border: 1px solid gray; }
-
-.back-btn {
-  padding: 10px;
-  font-size: 15px;
-  background-color: transparent;
-  border: 1px solid #574B90;
-  border-radius: 10px;
-  margin: 20px 20px; }
-  .back-btn:hover {
-    color: white;
-    background-color: #574B90;
-    transition: color 0.3s;
-    transition: background-color 0.3s; }
-  .back-btn:focus {
-    outline: none; }
-  .back-btn a {
-    text-decoration: none;
-    color: #574B90; }
-    .back-btn a:hover {
-      color: white;
-      text-decoration: none; }
-
-.text-input {
-  padding: 10px; }
-
-.submit-btn {
-  border: 2px solid #574B90;
-  color: white;
-  border-radius: 10px; }
